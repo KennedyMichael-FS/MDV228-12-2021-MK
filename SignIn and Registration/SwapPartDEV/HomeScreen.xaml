@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SwapPartDEV.HomeScreen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="personalizedWelcome" FontSize="Title" />
+            <Label FontSize="Title" HorizontalTextAlignment="Center" Text="Made it to home screen! Once logged in or signed up (like you just did) the catalog of tradable parts will appear here." HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+            <Button x:Name="signOut" Text="Sign Out" Pressed="signOut_Pressed"/>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

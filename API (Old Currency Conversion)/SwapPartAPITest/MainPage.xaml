@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SwapPartAPITest.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="OrangeRed" Padding="24" CornerRadius="0">
+            <Label Text="SwapPart API Test" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="An API test for SwapPart's currency conversion feature" FontSize="Title" Padding="30,10,30,10"/>
+            <Label Text="Input Amount (in USD) to convert" />
+            <Entry x:Name="toConvert" Text="Input USD amount here" Keyboard="Numeric"/>
+            <Button x:Name="convertPressed" Text="Convert" Clicked="convertPressed_Clicked"/>
+            <Label Text="That amount in GBP is..." />
+            <Label x:Name="result" />
+    </StackLayout>
+
+</ContentPage>
