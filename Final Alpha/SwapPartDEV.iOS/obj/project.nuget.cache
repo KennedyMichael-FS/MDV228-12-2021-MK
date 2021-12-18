@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "AvTg7q/ffA+dTU58e5XU/qCA0x7bUozK5f5amLSzgdmAjSlFK467QlVrCFmpIwLmxpS/+fsITthnEp2+aVPZ5A==",
+  "success": true,
+  "projectFilePath": "/Users/michaelkennedy/Docs/Schoolwork/PROJECT AND PORTFOLIO 2/Kennedy_Michael_Alpha/SwapPartDEV.iOS/SwapPartDEV.iOS.csproj",
+  "expectedPackageFiles": [
+    "/Users/michaelkennedy/.nuget/packages/xamarin.essentials/1.5.3.2/xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "/Users/michaelkennedy/.nuget/packages/xamarin.forms/4.8.0.1451/xamarin.forms.4.8.0.1451.nupkg.sha512"
+  ],
+  "logs": []
+}
