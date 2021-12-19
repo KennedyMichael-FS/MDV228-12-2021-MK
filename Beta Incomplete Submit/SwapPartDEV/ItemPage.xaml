@@ -7,10 +7,14 @@
                 <Image HorizontalOptions="Center" Source="https://i.ibb.co/ySKWRCN/SwapPart.png"/>
                 <Button Text="Cart" HorizontalOptions="End"/> 
             </Grid>
-            <Image Source="https://i.ibb.co/qRYk4mY/Processor.png" HorizontalOptions="Center"/>
-            <Label Padding="10,10,10,10" FontSize="36" HorizontalOptions="Center" Text="Catalog Item"/>
-            <Label Padding="10,10,10,10" FontSize="20" HorizontalOptions="Center" Text="A short and sweet description of the item. Or it can be a long description, depending on how complex the component or part really is."/>
-            <Button Text="Add to Trades" HorizontalOptions="Center" VerticalOptions="End"/>
+            <Frame BackgroundColor="White" VerticalOptions="CenterAndExpand">
+                <StackLayout>
+                    <Image Source="https://i.ibb.co/qRYk4mY/Processor.png" HorizontalOptions="Center"/>
+                    <Label Padding="10,10,10,10" FontSize="36" HorizontalOptions="Center" Text="Catalog Item"/>
+                    <Label Padding="10,10,10,10" FontSize="20" HorizontalOptions="Center" Text="A short and sweet description of the item. Or it can be a long description, depending on how complex the component or part really is."/>
+                    <Button Text="Add to Trades" HorizontalOptions="Center" VerticalOptions="End"/>
+                    </StackLayout>
+                </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
