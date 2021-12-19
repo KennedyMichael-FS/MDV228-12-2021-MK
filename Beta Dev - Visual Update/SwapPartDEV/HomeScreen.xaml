@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SwapPartDEV.HomeScreen">
+    <ContentPage.Content>
+
+        <StackLayout>
+            <Grid VerticalOptions="Start" Padding="10,10,10,10" BackgroundColor="OrangeRed">
+                <Button x:Name="logoutButton" Text="Log Out" HorizontalOptions="Start"/>
+                <Image HorizontalOptions="Center" Source="https://i.ibb.co/ySKWRCN/SwapPart.png"/>
+                <Button Text="Cart" HorizontalOptions="End"/> 
+            </Grid>
+
+            <CollectionView x:Name="collectionView" >
+                <CollectionView.ItemsLayout>
+                <GridItemsLayout Span="2" Orientation="Vertical" VerticalItemSpacing="10" HorizontalItemSpacing="10" />
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate >
+                    <Frame Margin="5" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" CornerRadius="10" >
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="60" Grid.RowSpan="2" />
+                            </Grid.RowDefinitions>
+                            <Image Source="https://i.ibb.co/qRYk4mY/Processor.png" Grid.Row="0" />
+                            <Label Text="{Binding Category}" Grid.Row="1" />
+                        </Grid>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SwapPartDEV.MainPage">
+
+    
+    <StackLayout>
+        <Frame BackgroundColor="#FF8A00" Padding="24" CornerRadius="0">
+            <Image Source="https://i.ibb.co/ySKWRCN/SwapPart.png"/>
+        </Frame>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="0,0,0,0">
+            <Button x:Name="signUpButton" TextColor="#FF8A00" Text="Sign Up" Pressed="signUpButton_Pressed"/>
+            <Button x:Name="signInButton" Text="Sign In" Pressed="signInButton_Pressed"/>
+        </StackLayout>
+        <StackLayout Padding="30,10,30,10">
+            <Frame BackgroundColor="White" VerticalOptions="CenterAndExpand">
+                <StackLayout>
+                    <Label x:Name="splashText" Text="Join SwapPart today to start trading!" FontSize="20" HorizontalTextAlignment="Center" Padding="30,10,30,10"/>
+                    <Entry x:Name="firstName" Placeholder="First Name"/>
+                    <Entry x:Name="lastName" Placeholder="Last Name" />
+                    <Entry x:Name="email" Placeholder="Email Address" Keyboard="Email"/>
+                    <Entry x:Name="username" Placeholder="Username" />
+                    <Entry x:Name="password" Placeholder="Password" IsPassword="True"/>
+                    <Entry x:Name="retypePass" Placeholder="Confirm Password" IsPassword="True"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+        <Button x:Name="submitButton" HorizontalOptions="Center" Text="Submit" Pressed="submitButton_Pressed" />
+        <Button x:Name="forgotPassword" HorizontalOptions="Center" Text="Forgot Password?" Pressed="forgotPassword_Pressed"/>
+    </StackLayout>
+    
+</ContentPage>
